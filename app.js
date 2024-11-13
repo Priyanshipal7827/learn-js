@@ -286,48 +286,48 @@ switch (boll) {
 
 let i = 5;
 for (let i = 0; i < 5; i++) {
-    console.log(i);    
+    console.log(i);
 }
 
 
 
-for (let i = 1; i <=10; i++) {
-  console.log(`outer loop is : ${i}`);
-  for (let j = 1; j <=10; j++) {
-    console.log(`${i} * ${j} = ${i*j}`)
-    // console.log(`inner loop is : ${j} and inner loop ${i}`);   
-  }
-  
-    
+for (let i = 1; i <= 10; i++) {
+    console.log(`outer loop is : ${i}`);
+    for (let j = 1; j <= 10; j++) {
+        console.log(`${i} * ${j} = ${i * j}`)
+        // console.log(`inner loop is : ${j} and inner loop ${i}`);   
+    }
+
+
 }
-let newarr = ["dates","graps","fig","pineapple","mango","strowbarry","lichi","banana","orange","apple"];
+let newarr = ["dates", "graps", "fig", "pineapple", "mango", "strowbarry", "lichi", "banana", "orange", "apple"];
 for (let index = 0; index < newarr.length; index++) {
     const element = newarr[index];
-    console.log(element);     
-    
+    console.log(element);
+
 }
 console.log(` length of new array is : ${newarr.length}`);
 
 /* learn break and continue sttement*/
 
 for (let i = 1; i <= 20; i++) {
-    if (i ==5){
+    if (i == 5) {
         console.log(`Detected 5`);
         break;
     }
 
- console.log(` Value of i is : ${i}`)
-    
+    console.log(` Value of i is : ${i}`)
+
 }
 
 for (let i = 1; i <= 20; i++) {
-    if (i ==5){
+    if (i == 5) {
         console.log(`Detected 5`);
         continue;
     }
 
- console.log(` Value of i is : ${i}`)
-    
+    console.log(` Value of i is : ${i}`)
+
 }
 
 // learn while loop
@@ -335,15 +335,15 @@ for (let i = 1; i <= 20; i++) {
 
 
 let j = 1;
-while(j<=10){
+while (j <= 10) {
     console.log(`Value of j is : ${j}`);
     j++;
 }
 
 
-let myarr = ["batman", "hulk", "superman","flash","spiderman"];
+let myarr = ["batman", "hulk", "superman", "flash", "spiderman"];
 let val = 0;
-while(val<myarr.length){
+while (val < myarr.length) {
     console.log(`Value of array index by index : ${myarr[val]}`);
     val++;
 }
@@ -357,22 +357,22 @@ let num = 1;
 do {
     console.log(`number is : ${num}`);
     num++;
-} while (num<=10);
+} while (num <= 10);
 
-const  arr1 = [1,2,3,4,5,6,7,8,9,10];
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 for (const num of arr1) {
-    console.log(num);    
+    console.log(num);
 }
 console.log("_______________________________________________________________");
 
 let greetings = "hello priyanshi.";
 for (const str of greetings) {
-    if(str==" "){
-       console.log(`detected space`);
-       continue;
+    if (str == " ") {
+        console.log(`detected space`);
+        continue;
     }
     console.log(str);
-    
+
 }
 
 console.log("_______________________________________________________________");
@@ -388,7 +388,7 @@ console.log("_______________________________________________________________");
 
 // for (const [key,Value] of map) {
 //     // console.log(key, ':-' , Value);
-    
+
 // }
 
 const map = new Map();
@@ -398,7 +398,7 @@ map.set('HR', 'hiring recuter.')
 
 for (const [key, Value] of map) {
     console.log(key, Value);
-    
+
 }
 console.log("_______________________________________________________________");
 
@@ -416,7 +416,7 @@ const newobj1 = {
 }
 
 for (const key in newobj1) {
-   console.log(newobj1[key]);
+    console.log(newobj1[key]);
 }
 
 console.log("_______________________________________________________________");
@@ -426,14 +426,14 @@ console.log("_______________________________________________________________");
 const coding = ["javascript", "html", "css", "ruby", "java", "c++", "python", "sql", "mongoDB"];
 for (const key in coding) {
     console.log(key);
-    
+
 }
 console.log("_______________________________________________________________");
 
 
 // for each loop
 
-coding.forEach( function (arr) {
+coding.forEach(function (arr) {
     console.log(arr);
 })
 
@@ -443,14 +443,14 @@ console.log("_______________________________________________________________");
 // arrow functions 
 
 
-const items = ["HTML.", "CSS.", "JAVASCRIPT.", "REACT.JS.", "NEXT.JS.", "TYPESCRIPT.", "NODE.JS.", "NODE.EXPRACE.", "SQL.", "MONGODB.", "JAVA.","PYTHON."];
-items.forEach( (val) =>{
+const items = ["HTML.", "CSS.", "JAVASCRIPT.", "REACT.JS.", "NEXT.JS.", "TYPESCRIPT.", "NODE.JS.", "NODE.EXPRACE.", "SQL.", "MONGODB.", "JAVA.", "PYTHON."];
+items.forEach((val) => {
     console.log(val);
 });
 console.log("_______________________________________________________________");
 
-items.forEach((val,index,arr) =>{
-    console.log(val,index,arr);
+items.forEach((val, index, arr) => {
+    console.log(val, index, arr);
 });
 console.log("_______________________________________________________________");
 
@@ -458,16 +458,16 @@ console.log("_______________________________________________________________");
 
 const mycoding = [
     {
-        languagename : "java",
-        languagefile_name:"java"
+        languagename: "java",
+        languagefile_name: "java"
     },
     {
-        languagename : "javascript",
-        languagefile_name:"js"
+        languagename: "javascript",
+        languagefile_name: "js"
     },
     {
-        languagename : "python",
-        languagefile_name:"py"
+        languagename: "python",
+        languagefile_name: "py"
     }
 ]
 
@@ -481,3 +481,79 @@ mycoding.forEach((item) => {
     console.log(item.languagename);
 });
 console.log("_______________________________________________________________");
+
+const mynum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(mynum);
+console.log("_______________________________________________________________");
+
+
+const newval = mynum.map((num) => num + 10);
+console.log(newval);
+console.log("_______________________________________________________________");
+
+
+const newval2 = mynum
+    .map((num) => num * 10)
+    .map((num) => num + 1)
+    .filter((num) => num >= 40)
+
+console.log(newval2);
+
+console.log("_______________________________________________________________");
+
+
+// reduce method in javascript in detail
+
+
+const red = [1,2,3,4,5,6,7,8,9,10];
+ const newredval = red.reduce(  function (acc,curval){
+    console.log(`acc: ${acc} and curval: ${curval}`);
+    return acc + curval;
+},0)
+console.log(newredval);
+console.log("_______________________________________________________________");
+
+const totalArr = [1,2,3,4,5];
+
+const my_total = totalArr.reduce( (acc,curval) =>{
+    console.log(`acc is : ${acc} and curval is : ${curval}`);
+    return acc + curval;
+} ,0);
+console.log(my_total);
+
+console.log("_______________________________________________________________");
+
+const shoppingCart = [
+    {
+        courseName : "delta by apna college.",
+        price: 4999
+    },
+    {
+        courseName : "alpha by apna college.",
+        price: 5999
+    },
+    {
+        courseName : "sigma by apna college.",
+        price: 8999
+    },
+    {
+        courseName : "python by apna college.",
+        price: 2999
+    }
+    
+];
+
+const courseTotal = shoppingCart.reduce( (acc,item) =>{
+    console.log(`acc is ${acc} and item is ${item.price} `);
+    return acc + item.price;
+},0);
+            
+           
+console.log(courseTotal);
+
+console.log("_______________________________________________________________");
+
+
+// DOM (Document Object model)
+
+
