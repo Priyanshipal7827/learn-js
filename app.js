@@ -320,3 +320,32 @@ for (let i = 1; i <= 20; i++) {
     
 }
 
+// learn while loop
+
+
+
+let j = 1;
+while(j<=10){
+    console.log(`Value of j is : ${j}`);
+    j++;
+}
+
+
+let myarr = ["batman", "hulk", "superman","flash","spiderman"];
+let val = 0;
+while(val<myarr.length){
+    console.log(`Value of array index by index : ${myarr[val]}`);
+    val++;
+}
+
+
+// learn do while loop
+
+
+let num = 1;
+
+do {
+    console.log(`number is : ${num}`);
+    num++;
+} while (num<=10);
+
