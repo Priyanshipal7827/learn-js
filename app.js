@@ -421,6 +421,63 @@ for (const key in newobj1) {
 
 console.log("_______________________________________________________________");
 
+// for in loop with objects
+
+const coding = ["javascript", "html", "css", "ruby", "java", "c++", "python", "sql", "mongoDB"];
+for (const key in coding) {
+    console.log(key);
+    
+}
+console.log("_______________________________________________________________");
+
+
+// for each loop
+
+coding.forEach( function (arr) {
+    console.log(arr);
+})
+
+console.log("_______________________________________________________________");
+
+
+// arrow functions 
+
+
+const items = ["HTML.", "CSS.", "JAVASCRIPT.", "REACT.JS.", "NEXT.JS.", "TYPESCRIPT.", "NODE.JS.", "NODE.EXPRACE.", "SQL.", "MONGODB.", "JAVA.","PYTHON."];
+items.forEach( (val) =>{
+    console.log(val);
+});
+console.log("_______________________________________________________________");
+
+items.forEach((val,index,arr) =>{
+    console.log(val,index,arr);
+});
+console.log("_______________________________________________________________");
 
 
 
+const mycoding = [
+    {
+        languagename : "java",
+        languagefile_name:"java"
+    },
+    {
+        languagename : "javascript",
+        languagefile_name:"js"
+    },
+    {
+        languagename : "python",
+        languagefile_name:"py"
+    }
+]
+
+mycoding.forEach((item) => {
+    console.log(item.languagefile_name);
+});
+console.log("_______________________________________________________________");
+
+
+mycoding.forEach((item) => {
+    console.log(item.languagename);
+});
+console.log("_______________________________________________________________");
