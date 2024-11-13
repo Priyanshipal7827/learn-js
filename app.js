@@ -313,6 +313,16 @@ console.log(` length of new array is : ${newarr.length}`);
 for (let i = 1; i <= 20; i++) {
     if (i ==5){
         console.log(`Detected 5`);
+        break;
+    }
+
+ console.log(` Value of i is : ${i}`)
+    
+}
+
+for (let i = 1; i <= 20; i++) {
+    if (i ==5){
+        console.log(`Detected 5`);
         continue;
     }
 
@@ -348,4 +358,66 @@ do {
     console.log(`number is : ${num}`);
     num++;
 } while (num<=10);
+
+const  arr1 = [1,2,3,4,5,6,7,8,9,10];
+for (const num of arr1) {
+    console.log(num);    
+}
+console.log("_______________________________________________________________");
+
+let greetings = "hello priyanshi.";
+for (const str of greetings) {
+    if(str==" "){
+       console.log(`detected space`);
+       continue;
+    }
+    console.log(str);
+    
+}
+
+console.log("_______________________________________________________________");
+
+
+// map with for of loop
+
+
+// const map = new Map()
+// map.set("IN" , "India")
+// map.set("USA", "United states of maerica")
+
+
+// for (const [key,Value] of map) {
+//     // console.log(key, ':-' , Value);
+    
+// }
+
+const map = new Map();
+map.set('SE', 'Software engineer.')
+map.set('SDE', 'software development engineer.')
+map.set('HR', 'hiring recuter.')
+
+for (const [key, Value] of map) {
+    console.log(key, Value);
+    
+}
+console.log("_______________________________________________________________");
+
+// for of loop in objects
+
+
+const newobj1 = {
+    name: "priyanshi",
+    fullName: "priyanshi pal",
+    course: "B.TECH",
+    branch: "Computer scinece engineering",
+    college_name: "DITE",
+    fullNameof_college: "Delhi institute of engineering & technology.",
+    id: 123231
+}
+
+for (const key in newobj1) {
+   console.log(newobj1[key]);
+}
+
+console.log("_______________________________________________________________");
 
