@@ -554,8 +554,93 @@ console.log(courseTotal);
 console.log("_______________________________________________________________");
 
 
-// DOM (Document Object model)
-
-
+const promiseOne = new Promise(((reslove, reject) => {
+          setTimeout( function(){
+            console.log('hello your task is complete.');
+            reslove();
+          },2000);
+    }));
+    
+    promiseOne.then(function(){
+        console.log("promised consumed.");
+        
+    });
+    new Promise(function(reslove,reject){
+        setTimeout(function(){
+            console.log('async task 2 is completed.');
+            reslove();
+        },5000)
+    }).then(function(){
+        console.log('async 2 is resolved.');
+    });
+    
+    const promiseThree = new Promise(function(reslove,reject){
+        setTimeout(function(){
+            // console.log('async 3 task is completed.');
+            reslove({username:"priyanshi pal, email:'palpriyanshi712@gmail.com"});
+        },7000)
+    })
+    promiseThree.then(function(user){
+        console.log(user);
+        
+    });
+    
+    const promiseFour = new Promise(function(reslove, reject){
+        setTimeout( function(){
+            let error = true;
+            if(!error){
+               reslove({username: 'priyanshi', email: 'palpriyanshi712@gmail.com'});
+    
+            }else{
+                reject('ERROR: Something went wrong.');
+            }
+        },5000)
+    });
+    
+    promiseFour
+    .then((user) =>{
+        console.log(user);
+        return user.username    
+    })
+    .then((username) =>{
+        console.log(username);
+    })
+    .catch(function(e){
+             console.log(e);
+             
+    });
+    
+    
+    
+    const promiseFive = new Promise(function(reslove,reject){
+        setTimeout(function(){
+            let error = true;
+            if(!error){
+                reslove({username: ' shradha khapra', email: '@shradhagmail.com'});
+            }else{
+                reject('ERROR: you entered wrong username!');
+            }
+        },7000);
+    });
+    async function consumePromiseFive(){
+        try {
+            const response = await promiseFive
+            console.log(response);
+            
+        } catch (error) {
+            console.log(error);
+            
+        }
+    }
+    consumePromiseFive();
+    
+    
+   
+    
+    
+    
+    
+    
+    
 
 
